@@ -8,8 +8,8 @@ class SSABabyNameExporterTest < Minitest::Test
 
   def test_it_parses_txt_file
     parser = SSABabyNameExporter::Parser.new
-    parsed_files = parser.parse_file("./source/AK.TXT")
-    assert_equal 1, parsed_files.count
+    parsed_lines = parser.parse_file("./source/AK.TXT")
+    assert_equal 26163, parsed_lines.count
   end
 
 end

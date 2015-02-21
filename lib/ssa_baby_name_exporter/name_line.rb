@@ -1,5 +1,5 @@
 module SSABabyNameExporter
-  class NamesList
+  class NameLine
 
     attr_accessor :id, :state, :sex, :year, :name, :count
 
