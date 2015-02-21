@@ -9,7 +9,7 @@ module SSABabyNameExporter
     end
 
     def open_file(filename)
-      File.open(filename, :headers => false)
+      CSV.open(filename, :headers => [], :header_converters => :symbol)
     end
 
     def build_names_lists(line)
